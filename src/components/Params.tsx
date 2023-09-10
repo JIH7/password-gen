@@ -5,11 +5,13 @@ interface ParamsProps {
 function Params({ length = 0 }: ParamsProps) {
   return (
     <section>
-        <div>
-            <p>Character  Length</p>
-            <p>{length}</p>
-        </div>
-        <input type="range" />
+        <form>
+            <div>
+                <p>Character  Length</p>
+                <p>{length}</p>
+            </div>
+            <input type="range" />
+        </form>
     </section>
   )
 }
